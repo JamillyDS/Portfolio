@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+@font-face {
+  font-family: "fontPrincipal";
+  src: url("../font/Daydream\ DEMO.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --fontSecundaria: "Anonymous Pro", monospace;
+  --fontPrincipal: "fontPrincipal";
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: #020618;
+}
+
+#menu {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20%;
+  height: 100vh;
+  background-color: #19203b;
+}
+
+#menu.ativo {
+  display: block;
+}
+
+#menu ul {
+  list-style: none;
+  padding: 20px;
+  margin: 0;
+}
+
+#menu ul li a {
+  font-family: var(--fontSecundaria);
+  font-weight: 800;
+  font-size: 1.2rem;
+  color: #ff7100;
+  display: block;
+  padding: 10px 0;
+  transition: 0.5s;
+}
+
+#menu ul li a:hover {
+  width: 100%;
+  color: #ff7100;
+  padding-left: 1em;
+  transition: 0.5s ease-in-out;
+}
+
+#btn-menu {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 10px;
+}
+
+#btn-menu .linha {
+  width: 25px;
+  height: 3px;
+  background-color: #ff7100;
+  display: block;
+}
+
+#disable {
+  margin: 0 20px;
+  margin-top: 6px;
+  font-size: 22px;
+  background: none;
+  border: none;
+  color: #ff7100;
+}
+
+#disable.disable {
+  display: none;
+}
+
+.hero {
+  color: #ff7100;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.hero .sub {
+  font-family: var(--fontSecundaria);
+  font-size: 2rem;
+  margin-bottom: 0.2em;
+}
+
+.hero .title {
+  font-family: var(--fontPrincipal);
+  font-size: 2.5rem;
+  margin-bottom: 0.4em;
+}
+
+.link {
+  font-size: 1.5rem;
+  margin: 0 0.5em;
+  font-size: 1.2em;
+  padding: 0.3em;
+  width: 15em;
+  border: none;
+  color: #f3efe4;
+  background-color: #ff7100;
+  font-family: var(--fontPrincipal);
+  transition: 0.5s;
+}
+
+.link:hover {
+  transition: 0.5s ease;
+  background-color: #8b1f04;
+  color: #807f7e;
+}
+
+.content-about {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.bottom-background {
+  background-color: #f3efe4;
+  margin-top: 6em;
+  width: 100%;
+  height: 30vh;
+}
+
+.content {
+  position: absolute;
+  top: 50em;
+}
+
+.content h1 {
+  margin-left: 0.8em;
+  margin-bottom: 0.2em;
+  font-family: var(--fontPrincipal);
+}
+
+.description {
+  width: 50em;
+  padding: 1.6em;
+  background-color: #020618;
+  color: #f3efe4;
+  font-family: var(--fontSecundaria);
+  border-top: solid #ff7100 4px;
+  border-right: solid #ff7100 2px;
+  border-bottom: solid #ff7100 2px;
+}
+
+.about-image {
+  color: #8b1f04;
+  position: absolute;
+  left: 80em;
+  top: 1em;
+  font-weight: 600;
+  font-family: var(--fontSecundaria);
+}
+
+.content-project {
+    
+}
